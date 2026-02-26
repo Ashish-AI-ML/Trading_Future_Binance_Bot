@@ -1,0 +1,47 @@
+[2026-02-26 12:02:42] [INFO] [trading_bot.cli] — Application started
+[2026-02-26 12:02:45] [INFO] [trading_bot.cli] — Application started
+[2026-02-26 12:02:45] [WARNING] [trading_bot.cli] — Validation failed — Invalid price: 'None'. Price is required for LIMIT orders.
+[2026-02-26 12:02:56] [INFO] [trading_bot.cli] — Application started
+[2026-02-26 12:02:56] [WARNING] [trading_bot.cli] — Validation failed — Invalid side: 'BUUY'. Expected one of: BUY, SELL.
+[2026-02-26 12:02:58] [INFO] [trading_bot.cli] — Application started
+[2026-02-26 12:02:58] [WARNING] [trading_bot.cli] — Validation failed — Invalid quantity: '-5'. Must be strictly greater than zero.
+[2026-02-26 12:34:39] [INFO] [trading_bot.cli] — Application started
+[2026-02-26 12:34:39] [DEBUG] [trading_bot.validators] — Validation passed — symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None
+[2026-02-26 12:34:39] [INFO] [trading_bot.orders] — Placing order — symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None
+[2026-02-26 12:34:39] [DEBUG] [trading_bot.client] — API request  — POST https://testnet.binancefuture.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.01', 'timestamp': 1772089479304, 'recvWindow': 5000, 'signature': '***REDACTED***'}
+[2026-02-26 12:34:40] [DEBUG] [trading_bot.client] — API response — POST https://testnet.binancefuture.com/fapi/v1/order — HTTP 401 (1172 ms) body={"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+[2026-02-26 12:34:40] [ERROR] [trading_bot.cli] — Binance API error — code=-2015 msg=Invalid API-key, IP, or permissions for action
+[2026-02-26 12:45:08] [INFO] [trading_bot.cli] — Application started
+[2026-02-26 12:45:08] [DEBUG] [trading_bot.validators] — Validation passed — symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None
+[2026-02-26 12:45:08] [INFO] [trading_bot.orders] — Placing order — symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None
+[2026-02-26 12:45:08] [DEBUG] [trading_bot.client] — API request  — POST https://testnet.binancefuture.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.01', 'timestamp': 1772090108359, 'recvWindow': 5000, 'signature': '***REDACTED***'}
+[2026-02-26 12:45:09] [DEBUG] [trading_bot.client] — API response — POST https://testnet.binancefuture.com/fapi/v1/order — HTTP 200 (1468 ms) body={"orderId":12548934038,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"sXMmGz0bRua1YlfAqTfnRu","price":"0.00","avgPrice":"0.00","origQty":"0.010","executedQty":"0.000","cumQty":"0.000","cumQuote":"0.00000","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1772090110179}
+[2026-02-26 12:45:09] [INFO] [trading_bot.orders] — Order placed successfully — orderId=12548934038 status=NEW executedQty=0.000 avgPrice=0.00
+[2026-02-26 12:45:09] [INFO] [trading_bot.cli] — Application finished successfully
+[2026-02-26 12:45:19] [INFO] [trading_bot.cli] — Application started
+[2026-02-26 12:45:19] [DEBUG] [trading_bot.validators] — Validation passed — symbol=BTCUSDT side=BUY type=LIMIT qty=0.01 price=50000
+[2026-02-26 12:45:19] [INFO] [trading_bot.orders] — Placing order — symbol=BTCUSDT side=BUY type=LIMIT qty=0.01 price=50000
+[2026-02-26 12:45:19] [DEBUG] [trading_bot.client] — API request  — POST https://testnet.binancefuture.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': '0.01', 'timeInForce': 'GTC', 'price': '50000', 'timestamp': 1772090119891, 'recvWindow': 5000, 'signature': '***REDACTED***'}
+[2026-02-26 12:45:20] [DEBUG] [trading_bot.client] — API response — POST https://testnet.binancefuture.com/fapi/v1/order — HTTP 200 (1062 ms) body={"orderId":12548934338,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"Cda5pCDllUv0X8ZEXKWzo2","price":"50000.00","avgPrice":"0.00","origQty":"0.010","executedQty":"0.000","cumQty":"0.000","cumQuote":"0.00000","timeInForce":"GTC","type":"LIMIT","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"LIMIT","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1772090121314}
+[2026-02-26 12:45:20] [INFO] [trading_bot.orders] — Order placed successfully — orderId=12548934338 status=NEW executedQty=0.000 avgPrice=0.00
+[2026-02-26 12:45:20] [INFO] [trading_bot.cli] — Application finished successfully
+[2026-02-26 13:03:46] [INFO] [trading_bot.cli] — Application started
+[2026-02-26 13:03:46] [DEBUG] [trading_bot.validators] — Validation passed — symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None
+[2026-02-26 13:03:46] [INFO] [trading_bot.orders] — Placing order — symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None
+[2026-02-26 13:03:46] [DEBUG] [trading_bot.client] — API request  — POST https://testnet.binancefuture.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.01', 'timestamp': 1772091226204, 'recvWindow': 5000, 'signature': '***REDACTED***'}
+[2026-02-26 13:03:47] [DEBUG] [trading_bot.client] — API response — POST https://testnet.binancefuture.com/fapi/v1/order — HTTP 200 (1266 ms) body={"orderId":12548972562,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"jE54I9BTJrQzJMRQW1acJ1","price":"0.00","avgPrice":"0.00","origQty":"0.010","executedQty":"0.000","cumQty":"0.000","cumQuote":"0.00000","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1772091227854}
+[2026-02-26 13:03:47] [INFO] [trading_bot.orders] — Order placed successfully — orderId=12548972562 status=NEW executedQty=0.000 avgPrice=0.00
+[2026-02-26 13:03:47] [INFO] [trading_bot.cli] — Application finished successfully
+[2026-02-26 13:03:56] [INFO] [trading_bot.cli] — Application started
+[2026-02-26 13:03:56] [DEBUG] [trading_bot.validators] — Validation passed — symbol=BTCUSDT side=BUY type=LIMIT qty=0.01 price=100000
+[2026-02-26 13:03:56] [INFO] [trading_bot.orders] — Placing order — symbol=BTCUSDT side=BUY type=LIMIT qty=0.01 price=100000
+[2026-02-26 13:03:56] [DEBUG] [trading_bot.client] — API request  — POST https://testnet.binancefuture.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': '0.01', 'timeInForce': 'GTC', 'price': '100000', 'timestamp': 1772091236715, 'recvWindow': 5000, 'signature': '***REDACTED***'}
+[2026-02-26 13:03:57] [DEBUG] [trading_bot.client] — API response — POST https://testnet.binancefuture.com/fapi/v1/order — HTTP 400 (1000 ms) body={"code":-4016,"msg":"Limit price can't be higher than 71512.10."}
+[2026-02-26 13:03:57] [ERROR] [trading_bot.cli] — Binance API error — code=-4016 msg=Limit price can't be higher than 71512.10.
+[2026-02-26 13:04:06] [INFO] [trading_bot.cli] — Application started
+[2026-02-26 13:04:06] [DEBUG] [trading_bot.validators] — Validation passed — symbol=BTCUSDT side=BUY type=LIMIT qty=0.01 price=71500
+[2026-02-26 13:04:06] [INFO] [trading_bot.orders] — Placing order — symbol=BTCUSDT side=BUY type=LIMIT qty=0.01 price=71500
+[2026-02-26 13:04:06] [DEBUG] [trading_bot.client] — API request  — POST https://testnet.binancefuture.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': '0.01', 'timeInForce': 'GTC', 'price': '71500', 'timestamp': 1772091246541, 'recvWindow': 5000, 'signature': '***REDACTED***'}
+[2026-02-26 13:04:07] [DEBUG] [trading_bot.client] — API response — POST https://testnet.binancefuture.com/fapi/v1/order — HTTP 200 (1172 ms) body={"orderId":12548973138,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"nXZQgiU94kZP0GduOhYjB7","price":"71500.00","avgPrice":"0.00","origQty":"0.010","executedQty":"0.000","cumQty":"0.000","cumQuote":"0.00000","timeInForce":"GTC","type":"LIMIT","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"LIMIT","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1772091248097}
+[2026-02-26 13:04:07] [INFO] [trading_bot.orders] — Order placed successfully — orderId=12548973138 status=NEW executedQty=0.000 avgPrice=0.00
+[2026-02-26 13:04:07] [INFO] [trading_bot.cli] — Application finished successfully

@@ -420,9 +420,11 @@ trading_Bot/
 └── logs/
     └── trading_bot.log    # Structured audit log (auto-created)
 ```
-
+<img width="1366" height="768" alt="Screenshot (21)" src="https://github.com/user-attachments/assets/03851201-b61e-49e7-90ae-2e796c59cced" />
+<img width="1366" height="768" alt="Screenshot (19)" src="https://github.com/user-attachments/assets/04c0b298-aa36-43a4-8dca-fe4d0fb73ae3" />
 ---
 
 ## License
 
 This project is for educational and testnet evaluation purposes.
+
